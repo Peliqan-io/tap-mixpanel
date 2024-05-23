@@ -507,6 +507,7 @@ class Export(MixPanel):
     bookmark_query_field_from = "from_date"
     bookmark_query_field_to = "to_date"
     replication_method = "INCREMENTAL"
+    key_properties = ["event","distinct_id","time"]
     params = {}
 
     def get_and_transform_records(
@@ -535,11 +536,9 @@ class Export(MixPanel):
                 transformed_data.append(transformed_record)
 
                 # Check for missing keys
-                for key in self.key_properties:
-                    val = transformed_record.get(key)
-                    if not val:
-                        LOGGER.error('Error: Missing Key')
-                        raise 'Missing Key'
+                if not any(transformed_record.get(key) for key in self.key_properties):
+                    LOGGER.error('Error: Missing Key')
+                    raise 'Missing Keys'
 
                 if len(transformed_data) == limit:
                     # Process full batch (limit = 250) records
