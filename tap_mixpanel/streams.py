@@ -540,8 +540,8 @@ class Export(MixPanel):
                 if len(missing_keys) == len(self.key_properties):
                     LOGGER.error('Error: Missing Keys')
                     raise 'Missing Keys'
-                else:
-                    for key in self.key_properties:
+                elif missing_keys:
+                    for key in missing_keys:
                         transformed_record[key] = ""
                 
                 if len(transformed_data) == limit:
