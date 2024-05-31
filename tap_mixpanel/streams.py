@@ -536,10 +536,14 @@ class Export(MixPanel):
                 transformed_data.append(transformed_record)
 
                 # Check for missing keys
-                if not any(transformed_record.get(key) for key in self.key_properties):
+                missing_keys = [ key for key in self.key_properties if not transformed_record.get(key)]
+                if len(missing_keys) == len(self.key_properties):
                     LOGGER.error('Error: Missing Keys')
                     raise 'Missing Keys'
-
+                elif missing_keys:
+                    for key in missing_keys:
+                        transformed_record[key] = ""
+                
                 if len(transformed_data) == limit:
                     # Process full batch (limit = 250) records
                     #   and get the max_bookmark_value and record_count
