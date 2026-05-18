@@ -1,0 +1,161 @@
+{
+  "streams": [
+    {
+      "key_properties": [
+        "distinct_id"
+      ],
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "inclusion": "available",
+            "selected": true,
+            "table-key-properties": [
+              "distinct_id"
+            ],
+            "valid-replication-keys": []
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "distinct_id"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "mp_reserved_email"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "mp_reserved_first_name"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "mp_reserved_last_name"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "last_environment_url"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "account_name"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "mp_reserved_phone"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Favorite Color"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        }
+      ],
+      "replication_key": null,
+      "replication_method": "FULL_TABLE",
+      "schema": {
+        "additionalProperties": true,
+        "properties": {
+          "Favorite Color": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "account_name": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "distinct_id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "last_environment_url": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "mp_reserved_email": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "mp_reserved_first_name": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "mp_reserved_last_name": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "mp_reserved_phone": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "stream": "engage",
+      "tap_stream_id": "engage"
+    }
+  ]
+}
