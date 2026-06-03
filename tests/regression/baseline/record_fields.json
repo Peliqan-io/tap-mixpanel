@@ -1,0 +1,12 @@
+{
+  "engage": [
+    "Favorite Color",
+    "account_name",
+    "distinct_id",
+    "last_environment_url",
+    "mp_reserved_email",
+    "mp_reserved_first_name",
+    "mp_reserved_last_name",
+    "mp_reserved_phone"
+  ]
+}

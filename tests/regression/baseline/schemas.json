@@ -1,0 +1,56 @@
+{
+  "engage": {
+    "additionalProperties": true,
+    "properties": {
+      "Favorite Color": {
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      "account_name": {
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      "distinct_id": {
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      "last_environment_url": {
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      "mp_reserved_email": {
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      "mp_reserved_first_name": {
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      "mp_reserved_last_name": {
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      "mp_reserved_phone": {
+        "type": [
+          "null",
+          "string"
+        ]
+      }
+    },
+    "type": "object"
+  }
+}
